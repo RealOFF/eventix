@@ -10,10 +10,9 @@ import { fromZod } from '@eventix/validation/zod';
 
 const messageSchema = z.object({
   userId: z.string(),
-})
+});
 
 const router = new EventRouter()
-  .outgoingEvents<Events>()
   .on('user:login', (ctx) => {
     // ctx.payload is typed as { userId: string }
   }, { schema: fromZod(messageSchema) });

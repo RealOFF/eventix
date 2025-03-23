@@ -112,16 +112,17 @@ const mainRouter = new EventRouter()
 ### Type-safe Event Definitions
 
 ```typescript
-interface Events {
-  'user:login': { userId: string };
-  'user:logout': { userId: string };
-}
+import { z } from 'zod';
+import { fromZod } from '@eventix/validation/zod';
+
+const messageSchema = z.object({
+  userId: z.string(),
+});
 
 const router = new EventRouter()
-  .outgoingEvents<Events>()
   .on('user:login', (ctx) => {
     // ctx.payload is typed as { userId: string }
-  });
+  }, { schema: fromZod(messageSchema) });
 ```
 
 ## Packages
