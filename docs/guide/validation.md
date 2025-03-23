@@ -26,7 +26,13 @@ const router = new EventRouter()
 import { fromZod } from '@eventix/validation/zod';
 import { z } from 'zod';
 
-const schema = z.object({
-  text: z.string()
+const messageSchema = z.object({
+  text: z.string(),
+  userId: z.string()
 });
+
+const router = new EventRouter()
+ .on('message', handler, {
+    schema: fromZod(messageSchema)
+  });
 ```

@@ -31,7 +31,6 @@ export default defineConfig({
         text: 'Advanced',
         items: [
           { text: 'Router Composition', link: '/guide/composition' },
-          { text: 'Custom Validators', link: '/guide/custom-validators' }
         ]
       }
     ]

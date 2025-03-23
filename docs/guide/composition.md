@@ -8,12 +8,12 @@ Router composition is a powerful feature in Eventix that allows you to combine m
 import { EventRouter } from 'eventix';
 
 const userRouter = new EventRouter()
-  .on('user:create', (payload) => { /* ... */ })
-  .on('user:update', (payload) => { /* ... */ });
+  .on('user:create', (ctx) => { /* ... */ })
+  .on('user:update', (ctx) => { /* ... */ });
 
 const orderRouter = new EventRouter()
-  .on('order:create', (payload) => { /* ... */ })
-  .on('order:update', (payload) => { /* ... */ });
+  .on('order:create', (ctx) => { /* ... */ })
+  .on('order:update', (ctx) => { /* ... */ });
 
 // Compose routers
 const appRouter = new EventRouter()
