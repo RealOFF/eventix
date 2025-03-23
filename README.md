@@ -172,8 +172,3 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 ## License
 
 MIT
-```
-
-The README has been created with comprehensive documentation including installation instructions, usage examples, API reference, and more. Would you like me to make any adjustments to the content?
-
-```
