@@ -2,6 +2,8 @@
 
 A lightweight, type-safe event routing library for TypeScript applications with built-in validation support.
 
+![Tests](https://github.com/yourusername/eventix/actions/workflows/test.yml/badge.svg)
+
 ## Features
 
 - 🎯 **Type-safe event routing** - Full TypeScript support with type inference
