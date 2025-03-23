@@ -3,6 +3,7 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: 'Eventix',
   description: 'Type-safe event routing library for TypeScript',
+  base: '/eventix/',
   themeConfig: {
     nav: [
       { text: 'Guide', link: '/guide/getting-started' },
