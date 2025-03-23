@@ -2,8 +2,7 @@
 
 A lightweight, type-safe event routing library for TypeScript applications with built-in validation support.
 
-[![Tests: passed](https://img.shields.io/github/actions/workflow/status/mikitahimpel/eventix/test.yml?label=tests&logo=github)](https://github.com/mikitahimpel/eventix/actions/workflows/test.yml)
-[![codecov](https://codecov.io/gh/yourusername/eventix/branch/main/graph/badge.svg)](https://codecov.io/gh/yourusername/eventix)
+[![cov](https://RealOFF.github.io/eventix/badges/coverage.svg)](https://github.com/RealOFF/eventix/actions)
 
 ## Features
 
