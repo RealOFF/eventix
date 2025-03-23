@@ -1,0 +1,15 @@
+{
+  "name": "@eventix/example-core-typebox",
+  "private": true,
+  "scripts": {
+    "start": "tsx index.ts"
+  },
+  "dependencies": {
+    "@eventix/core": "workspace:*",
+    "@eventix/validation": "workspace:*",
+    "@sinclair/typebox": "^0.31.0"
+  },
+  "devDependencies": {
+    "tsx": "^4.6.2"
+  }
+}

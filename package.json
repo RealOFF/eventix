@@ -1,0 +1,29 @@
+{
+  "name": "eventix",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "pnpm -r build",
+    "dev": "pnpm -r dev",
+    "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json,md}\"",
+    "format:check": "prettier --check \"**/*.{ts,tsx,js,jsx,json,md}\"",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "test": "pnpm vitest",
+    "test:run": "pnpm vitest run",
+    "test:coverage": "pnpm vitest run --coverage"
+  },
+  "devDependencies": {
+    "@eslint/compat": "^1.2.7",
+    "@types/node": "^20.8.0",
+    "@typescript-eslint/eslint-plugin": "^8.27.0",
+    "@typescript-eslint/parser": "^8.27.0",
+    "@vitest/coverage-c8": "^0.33.0",
+    "eslint": "^9.23.0",
+    "jiti": "^2.4.2",
+    "prettier": "^3.5.3",
+    "tsup": "^7.2.0",
+    "typescript": "^5.8.2",
+    "vitest": "^3.0.9"
+  }
+}

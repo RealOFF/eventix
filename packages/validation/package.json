@@ -1,0 +1,49 @@
+{
+  "name": "@eventix/validation",
+  "version": "0.1.0",
+  "type": "module",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    },
+    "./typebox": {
+      "types": "./dist/typebox/index.d.ts",
+      "import": "./dist/typebox/index.js",
+      "require": "./dist/typebox/index.cjs"
+    },
+    "./zod": {
+      "types": "./dist/zod/index.d.ts",
+      "import": "./dist/zod/index.js",
+      "require": "./dist/zod/index.cjs"
+    }
+  },
+  "scripts": {
+    "build": "tsup src/index.ts src/typebox/index.ts src/zod/index.ts --format esm,cjs --dts --clean",
+    "dev": "tsup src/zod/index.ts src/typebox/index.ts --format esm,cjs --dts --watch --sourcemap",
+    "test": "vitest"
+  },
+  "dependencies": {
+    "@eventix/core": "workspace:*"
+  },
+  "devDependencies": {
+    "@sinclair/typebox": "^0.31.0",
+    "zod": "^3.22.4"
+  },
+  "peerDependencies": {
+    "@sinclair/typebox": ">=0.25.0",
+    "zod": ">=3.0.0"
+  },
+  "peerDependenciesMeta": {
+    "zod": {
+      "optional": true
+    },
+    "@sinclair/typebox": {
+      "optional": true
+    }
+  }
+}
