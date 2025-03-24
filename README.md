@@ -2,8 +2,6 @@
 
 A lightweight, type-safe event routing library for TypeScript applications with built-in validation support.
 
-[![cov](https://RealOFF.github.io/eventix/badges/coverage.svg)](https://github.com/RealOFF/eventix/actions)
-
 ## Features
 
 - 🎯 **Type-safe event routing** - Full TypeScript support with type inference
